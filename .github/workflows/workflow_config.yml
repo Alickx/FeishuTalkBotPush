@@ -19,5 +19,4 @@ jobs:
 on:
   workflow_dispatch:
     schedules:
-      UTC时间每3分钟执行一次:
         cron: '*/3 * * * *'

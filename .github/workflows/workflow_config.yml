@@ -1,8 +1,7 @@
 name: My Feishu Talk Bot Push
 on:
-  workflow_dispatch:
-    schedules:
-      cron: '*/3 * * * *'
+  schedule:
+    - cron: '*/3 * * * *'
 
 jobs:
   run-python-script:

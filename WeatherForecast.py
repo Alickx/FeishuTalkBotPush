@@ -3,7 +3,7 @@ import os
 
 import requests
 
-app_key = os.environ['jd_weather_app_key']
+app_key = os.environ['JD_WEATHER_APP_KEY']
 
 webHookServerUrl = os.environ['WEBHOOK_SERVER_URL']
 

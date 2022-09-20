@@ -1,5 +1,8 @@
 name: My Feishu Talk Bot Push
 on:
+  push:
+    branches:
+      - master
   schedule:
     - cron: '*/3 * * * *'
 

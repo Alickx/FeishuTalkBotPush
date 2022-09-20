@@ -20,9 +20,9 @@ jobs:
           pip install -r requirements.txt
       - name: run python script
         run: |
-          python ./PushWeiboHotSearchRegularly.py
-          python ./TodayInHistory.py
-          python ./WeatherForecast.py.py
+          python PushWeiboHotSearchRegularly.py
+          python TodayInHistory.py
+          python WeatherForecast.py.py
         env:
           JD_WEATHER_APP_KEY: ${{ secrets.JD_WEATHER_APP_KEY }}
           WEBHOOK_SERVER_URL: ${{ secrets.WEBHOOK_SERVER_URL }}

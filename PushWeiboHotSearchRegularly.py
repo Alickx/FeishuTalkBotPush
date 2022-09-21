@@ -46,7 +46,7 @@ def push_weibo_hot_search():
             "header": {
                 "template": "blue",
                 "title": {
-                    "content": "💪 微博热搜每日推送 💪",
+                    "content": "💪 微博热搜定时推送 💪",
                     "tag": "plain_text"
                 }
             }

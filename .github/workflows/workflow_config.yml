@@ -1,9 +1,8 @@
 name: My Feishu Talk Bot Push
 on:
-  workflow_dispatch: # 手动触发
-  schedule:
-    # UTC时间每天9点触发
-    - cron: '0 1 * * *'
+  repository_dispatch:
+    types:
+      - feishu-talk-bot-push
 
 
 jobs:

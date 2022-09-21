@@ -4,6 +4,7 @@ on:
     types:
       - feishu-daily-push
       - feishu-3hour-push
+      -
 
 jobs:
   run-python-script:
@@ -34,7 +35,11 @@ jobs:
         if: github.event.action == 'feishu-3hour-push'
         run: |
           python PushWeiboHotSearchRegularly.py
+          python BiliBiliHotVideo.py
         env:
           JD_WEATHER_APP_KEY: ${{ secrets.JD_WEATHER_APP_KEY }}
           WEBHOOK_SERVER_URL: ${{ secrets.WEBHOOK_SERVER_URL }}
           WEIBO_COOKIE: ${{ secrets.WEIBO_COOKIE }}
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          BILIBILI_COOKIES: ${{ secrets.BILIBILI_COOKIES }}

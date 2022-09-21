@@ -34,3 +34,7 @@ jobs:
         if: github.event.action == 'feishu-3hour-push'
         run: |
           python PushWeiboHotSearchRegularly.py
+        env:
+          JD_WEATHER_APP_KEY: ${{ secrets.JD_WEATHER_APP_KEY }}
+          WEBHOOK_SERVER_URL: ${{ secrets.WEBHOOK_SERVER_URL }}
+          WEIBO_COOKIE: ${{ secrets.WEIBO_COOKIE }}

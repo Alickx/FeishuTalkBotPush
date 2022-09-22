@@ -4,7 +4,7 @@ import requests
 from requests_toolbelt import MultipartEncoder
 
 
-def main_handler():
+def main_handler(args1,args2):
     webhook_url = os.environ['WEBHOOK_SERVER_URL']
 
     url = "https://api.bilibili.com/x/web-interface/popular?ps=20&pn=1"

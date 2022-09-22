@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def main_handler():
+def main_handler(args1,args2):
 
     cookies = os.environ['WEIBO_COOKIE']
     webHookServerUrl = os.environ['WEBHOOK_SERVER_URL']

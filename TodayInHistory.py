@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 webHookServerUrl = os.environ['WEBHOOK_SERVER_URL']
 
 
-def main_handler():
+def main_handler(args1,args2):
     content = []
     # 爬取今日历史
     web_url = 'https://today.help.bj.cn/'

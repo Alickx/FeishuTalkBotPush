@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def push_weibo_hot_search():
+def main_handler():
 
     cookies = os.environ['WEIBO_COOKIE']
     webHookServerUrl = os.environ['WEBHOOK_SERVER_URL']
@@ -69,7 +69,3 @@ def push_weibo_hot_search():
     datajson = json.dumps(jsonStr, ensure_ascii=False)
     r = requests.post(webHookServerUrl, data=datajson.encode('utf-8'))
     print(r.text)
-
-
-if __name__ == '__main__':
-    push_weibo_hot_search()

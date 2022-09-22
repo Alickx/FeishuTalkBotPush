@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 webHookServerUrl = os.environ['WEBHOOK_SERVER_URL']
 
 
-def push_today_history():
+def main_handler():
     content = []
     # 爬取今日历史
     web_url = 'https://today.help.bj.cn/'
@@ -62,7 +62,3 @@ def push_today_history():
 
     r = requests.post(webHookServerUrl, json=jsonStr)
     print(r.text)
-
-
-if __name__ == '__main__':
-    push_today_history()

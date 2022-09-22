@@ -157,7 +157,3 @@ def feishu_card(news):
             })
 
     return jsonStr
-
-
-if __name__ == '__main__':
-    main_handler()

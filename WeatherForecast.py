@@ -8,7 +8,7 @@ app_key = os.environ['JD_WEATHER_APP_KEY']
 webHookServerUrl = os.environ['WEBHOOK_SERVER_URL']
 
 
-def push_weather_forecast():
+def main_handler():
     nanshan = {
         'city_name': '南山',
         "city_id": '706',
